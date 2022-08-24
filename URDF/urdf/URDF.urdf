@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.082715 0.098266 0.1941"
+        rpy="0 0 0" />
+      <mass
+        value="0.44989" />
+      <inertia
+        ixx="0.001472"
+        ixy="-7.3863E-09"
+        ixz="-1.5206E-07"
+        iyy="0.0022027"
+        iyz="-1.6436E-06"
+        izz="0.00074159" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.53725 0.34902 0.33725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Roda1_Link">
+    <inertial>
+      <origin
+        xyz="-6.5174E-10 3.7783E-09 0.017937"
+        rpy="0 0 0" />
+      <mass
+        value="0.050589" />
+      <inertia
+        ixx="2.8263E-05"
+        ixy="8.4339E-13"
+        ixz="8.5498E-13"
+        iyy="2.8263E-05"
+        iyz="-2.16E-12"
+        izz="4.8345E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Roda1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Roda1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1"
+    type="revolute">
+    <origin
+      xyz="0.16374 -0.25557 0.1114"
+      rpy="1.5708 -1.1623 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Roda1_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Roda2_Link">
+    <inertial>
+      <origin
+        xyz="-2.5376E-09 -1.8066E-09 0.015802"
+        rpy="0 0 0" />
+      <mass
+        value="0.050589" />
+      <inertia
+        ixx="2.8263E-05"
+        ixy="-2.3387E-12"
+        ixz="1.7915E-12"
+        iyy="2.8263E-05"
+        iyz="1.1895E-12"
+        izz="4.8345E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Roda2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Roda2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="2"
+    type="revolute">
+    <origin
+      xyz="0 -0.25557 0.1114"
+      rpy="1.5708 -0.58968 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Roda2_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Suporte1_Link">
+    <inertial>
+      <origin
+        xyz="6.9389E-17 0.010443 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0058068" />
+      <inertia
+        ixx="4.7315E-07"
+        ixy="5.5229E-22"
+        ixz="5.9902E-23"
+        iyy="8.0601E-07"
+        iyz="1.415E-22"
+        izz="5.6694E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Suporte1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.89804 0.89804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Suporte1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="3"
+    type="fixed">
+    <origin
+      xyz="0.083085 -0.13382 0.094937"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Suporte1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Suporte2_Link">
+    <inertial>
+      <origin
+        xyz="2.7756E-17 -0.0018442 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0041821" />
+      <inertia
+        ixx="2.0974E-07"
+        ixy="-8.1817E-24"
+        ixz="1.1911E-22"
+        iyy="3.8569E-07"
+        iyz="2.3864E-23"
+        izz="2.0974E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Suporte2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.89804 0.89804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Suporte2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="4"
+    type="fixed">
+    <origin
+      xyz="0.083085 -0.13382 0.084937"
+      rpy="-1.5708 0 2.5629" />
+    <parent
+      link="base_link" />
+    <child
+      link="Suporte2_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Esfera_Link">
+    <inertial>
+      <origin
+        xyz="0.0025946 -0.00054108 0.0020019"
+        rpy="0 0 0" />
+      <mass
+        value="0.010855" />
+      <inertia
+        ixx="2.0829E-07"
+        ixy="-4.9631E-23"
+        ixz="1.9852E-23"
+        iyy="2.0829E-07"
+        iyz="-6.6174E-24"
+        izz="2.0829E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Esfera_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.89804 0.89804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://URDF/meshes/Esfera_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="5"
+    type="continuous">
+    <origin
+      xyz="0 0.0013305 0"
+      rpy="-0.053191 0.6634 1.7018" />
+    <parent
+      link="Suporte2_Link" />
+    <child
+      link="Esfera_Link" />
+    <axis
+      xyz="0.45924 -0.50408 -0.73144" />
+  </joint>
+</robot>
